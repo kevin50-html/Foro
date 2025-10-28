@@ -1,39 +1,39 @@
 /* ########################################### */
 /*                 Global                      */
 /* ########################################### */
+
 *, *::before, *::after{
     box-sizing: border-box;
 }
 
 :root{
-    --color-background: #020b2a;
-    --color-background-alt: #081742;
-    --color-surface: #101f4d;
-    --color-surface-soft: #14275a;
-    --color-border: rgba(100, 184, 255, 0.35);
-    --color-highlight: #29a2ff;
-    --color-highlight-soft: #58f2ff;
-    --color-text: #f5f8ff;
-    --color-text-muted: #a7b8e7;
-    --shadow-soft: 0 16px 35px rgba(4, 14, 38, 0.55);
+    --color-background: #ffffff;
+    --color-background-alt: #f5f7fb;
+    --color-surface: #ffffff;
+    --color-surface-soft: #eef3ff;
+    --color-border: rgba(46, 88, 148, 0.12);
+    --color-highlight: #3258d4;
+    --color-highlight-soft: #5f8dff;
+    --color-text: #1b2748;
+    --color-text-muted: #5b6886;
+    --shadow-soft: 0 10px 30px rgba(39, 76, 137, 0.08);
 }
 
 html{
     font-size: 14px;
     font-family: 'Titillium Web', sans-serif;
-    background: radial-gradient(circle at top, rgba(41, 162, 255, 0.25), transparent 55%),
-                linear-gradient(135deg, var(--color-background) 0%, #000417 100%);
+    background: var(--color-background);
     color: var(--color-text);
 }
 
 body{
     margin: 0;
-    background: transparent;
+    background: var(--color-background);
     color: inherit;
 }
 
 a{
-    color: var(--color-highlight-soft);
+    color: var(--color-highlight);
     font-weight: 600;
     text-decoration: none;
     transition: color 0.2s ease;
@@ -57,7 +57,7 @@ p{
 hr{
     border: none;
     height: 1px;
-    background-image: linear-gradient(to right, transparent, rgba(88, 242, 255, 0.55), transparent);
+    background-image: linear-gradient(to right, transparent, rgba(95, 141, 255, 0.35), transparent);
 }
 
 @font-face {
