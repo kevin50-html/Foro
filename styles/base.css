@@ -1,26 +1,63 @@
 /* ########################################### */
 /*                 Global                      */
 /* ########################################### */
-*{
+*, *::before, *::after{
     box-sizing: border-box;
+}
+
+:root{
+    --color-background: #020b2a;
+    --color-background-alt: #081742;
+    --color-surface: #101f4d;
+    --color-surface-soft: #14275a;
+    --color-border: rgba(100, 184, 255, 0.35);
+    --color-highlight: #29a2ff;
+    --color-highlight-soft: #58f2ff;
+    --color-text: #f5f8ff;
+    --color-text-muted: #a7b8e7;
+    --shadow-soft: 0 16px 35px rgba(4, 14, 38, 0.55);
 }
 
 html{
     font-size: 14px;
     font-family: 'Titillium Web', sans-serif;
-    background-color:rgb(0,0,0);
-    color:#FEFEFE;
+    background: radial-gradient(circle at top, rgba(41, 162, 255, 0.25), transparent 55%),
+                linear-gradient(135deg, var(--color-background) 0%, #000417 100%);
+    color: var(--color-text);
+}
+
+body{
+    margin: 0;
+    background: transparent;
+    color: inherit;
 }
 
 a{
-    color:#FF0042;
-    font-weight: bolder;
+    color: var(--color-highlight-soft);
+    font-weight: 600;
     text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover,
+a:focus{
+    color: var(--color-highlight);
 }
 
 h1{
     font-size:16px;
     font-weight: bolder;
+}
+
+p{
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgba(88, 242, 255, 0.55), transparent);
 }
 
 @font-face {
