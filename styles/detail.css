@@ -3,13 +3,13 @@
 /* ########################################### */
 .head{
     display: flex;
-    background: var(--color-background-alt);
+    background: linear-gradient(135deg, rgba(16, 45, 105, 0.9), rgba(11, 28, 73, 0.85));
     padding: 18px;
     font-weight: 700;
     font-size: 16px;
     border-radius: 16px;
-    border: 1px solid var(--color-border);
-    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(88, 242, 255, 0.2);
+    box-shadow: 0 16px 30px rgba(5, 20, 61, 0.55);
 }
 
 .authors{
@@ -23,12 +23,12 @@
 
 .body{
     display: flex;
-    background: var(--color-surface);
+    background: linear-gradient(150deg, rgba(8, 25, 68, 0.92), rgba(10, 34, 86, 0.88));
     padding: 20px;
     margin-top: 12px;
     border-radius: 18px;
-    border: 1px solid var(--color-border);
-    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(88, 242, 255, 0.12);
+    box-shadow: 0 16px 28px rgba(3, 15, 49, 0.55);
 }
 
 .body .authors .username{
@@ -40,34 +40,34 @@
     max-width: 60px;
     max-height: 90px;
     border-radius: 12px;
-    border: 1px solid var(--color-border);
+    border: 1px solid rgba(88, 242, 255, 0.25);
 }
 
 .body .content .comment button{
     border:none;
     padding:12px 20px;
     font-weight: 700;
-    box-shadow: 0 12px 20px rgba(50, 88, 212, 0.22);
+    box-shadow: 0 12px 20px rgba(9, 41, 98, 0.45);
     cursor: pointer;
     float: right;
     border-radius: 12px;
     background: linear-gradient(135deg, var(--color-highlight-soft), var(--color-highlight));
-    color: #ffffff;
+    color: #041236;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .body .content .comment button:hover{
     transform: translateY(-2px);
-    box-shadow: 0 16px 28px rgba(50, 88, 212, 0.35);
+    box-shadow: 0 16px 28px rgba(9, 41, 98, 0.6);
 }
 
 .comment-area{
     margin-bottom:50px;
-    background: var(--color-surface);
+    background: linear-gradient(140deg, rgba(8, 23, 64, 0.9), rgba(12, 33, 82, 0.9));
     border-radius: 18px;
-    border: 1px solid var(--color-border);
+    border: 1px solid rgba(88, 242, 255, 0.18);
     padding: 20px;
-    box-shadow: var(--shadow-soft);
+    box-shadow: 0 18px 32px rgba(3, 16, 49, 0.55);
 }
 
 .comment-area textarea{
@@ -75,9 +75,9 @@
     min-height: 120px;
     padding: 16px;
     margin-block: 10px;
-    background: var(--color-background-alt);
+    background: rgba(8, 25, 66, 0.8);
     border-radius: 14px;
-    border: 1px solid var(--color-border);
+    border: 1px solid rgba(88, 242, 255, 0.2);
     color: var(--color-text);
 }
 
@@ -88,15 +88,15 @@
     cursor: pointer;
     background: linear-gradient(135deg, var(--color-highlight-soft), var(--color-highlight));
     border: none;
-    color: #ffffff;
+    color: #041236;
     font-weight: 700;
-    box-shadow: 0 12px 20px rgba(50, 88, 212, 0.22);
+    box-shadow: 0 12px 20px rgba(9, 41, 98, 0.45);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .comment-area input:hover{
     transform: translateY(-2px);
-    box-shadow: 0 16px 26px rgba(50, 88, 212, 0.35);
+    box-shadow: 0 16px 26px rgba(9, 41, 98, 0.6);
 }
 
 @media screen and (max-width: 768px){
@@ -130,7 +130,7 @@
 }
 
 .navigate a{
-    color: var(--color-highlight);
+    color: var(--color-highlight-soft);
 }
 
 .navigate a:hover{
