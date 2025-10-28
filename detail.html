@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,40 +11,65 @@
 </head>
 
 <body>
-    <div data-include="header"></div>
+    <header>
+        <!--NavBar Section-->
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="forums.html">Foros</a></li>
+                    <li class="nav-item"><a href="posts.html">Publicaciones</a></li>
+                    <li class="nav-item"><a href="detail.html">Detalle</a></li>
+                </ul>
+            </nav>
+            <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+            <div class="brand">Mi Foro</div>
+        </div>
+        <!--SearchBox Section-->
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="Everything">Todo</option>
+                    <option value="Titles">Títulos</option>
+                    <option value="Descriptions">Descripciones</option>
+                </select>
+                <input type="text" name="q" placeholder="buscar ...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
     <div class="container">
         <!--Navigation-->
         <div class="navigate">
-            <span><a href="">MyForum - Forums</a> >> <a href="">random subforum</a> >> <a href="">random topic</a></span>
+            <span><a href="">MiForo - Foros</a> >> <a href="">subforo aleatorio</a> >> <a href="">tema aleatorio</a></span>
         </div>
 
         <!--Topic Section-->
         <div class="topic-container">
             <!--Original thread-->
             <div class="head">
-                <div class="authors">Author</div>
-                <div class="content">Topic: random topic (Read 1325 Times)</div>
+                <div class="authors">Autor</div>
+                <div class="content">Tema: tema aleatorio (Leído 1325 veces)</div>
             </div>
 
             <div class="body">
                 <div class="authors">
-                    <div class="username"><a href="">Username</a></div>
-                    <div>Role</div>
+                    <div class="username"><a href="">UsuarioDemo</a></div>
+                    <div>Rol</div>
                     <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="">
-                    <div>Posts: <u>45</u></div>
-                    <div>Points: <u>4586</u></div>
+                    <div>Publicaciones: <u>45</u></div>
+                    <div>Puntos: <u>4586</u></div>
                 </div>
                 <div class="content">
-                    Just a random content of a random topic.
-                    <br>To see how it looks like.
+                    Solo un contenido aleatorio de un tema aleatorio.
+                    <br>Para ver cómo se ve.
                     <br><br>
-                    Nothing more and nothing less.
+                    Nada más y nada menos.
                     <br>
                     <hr>
-                    Regards username
+                    Saludos, usuario
                     <br>
                     <div class="comment">
-                        <button onclick="showComment()">Comment</button>
+                        <button onclick="showComment()">Comentar</button>
                     </div>
                 </div>
             </div>
@@ -52,37 +77,37 @@
 
         <!--Comment Area-->
         <div class="comment-area hide" id="comment-area">
-            <textarea name="comment" id="" placeholder="comment here ... "></textarea>
-            <input type="submit" value="submit">
+            <textarea name="comment" id="" placeholder="Escribe tu comentario aquí..."></textarea>
+            <input type="submit" value="Enviar">
         </div>
 
         <!--Comments Section-->
         <div class="comments-container">
             <div class="body">
                 <div class="authors">
-                    <div class="username"><a href="">AnotherUser</a></div>
-                    <div>Role</div>
+                    <div class="username"><a href="">OtroUsuario</a></div>
+                    <div>Rol</div>
                     <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="">
-                    <div>Posts: <u>455</u></div>
-                    <div>Points: <u>4586</u></div>
+                    <div>Publicaciones: <u>455</u></div>
+                    <div>Puntos: <u>4586</u></div>
                 </div>
                 <div class="content">
-                    Just a comment of the above random topic.
-                    <br>To see how it looks like.
+                    Solo un comentario sobre el tema aleatorio anterior.
+                    <br>Para ver cómo se ve.
                     <br><br>
-                    Nothing more and nothing less.
+                    Nada más y nada menos.
                     <br>
                     <br>
                     <div class="comment">
-                        <button onclick="showReply()">Reply</button>
+                        <button onclick="showReply()">Responder</button>
                     </div>
                 </div>
             </div>
         </div>
         <!--Reply Area-->
         <div class="comment-area hide" id="reply-area">
-            <textarea name="reply" id="" placeholder="reply here ... "></textarea>
-            <input type="submit" value="submit">
+            <textarea name="reply" id="" placeholder="Escribe tu respuesta aquí..."></textarea>
+            <input type="submit" value="Enviar">
         </div>
 
 
@@ -90,29 +115,29 @@
         <div class="comments-container">
             <div class="body">
                 <div class="authors">
-                    <div class="username"><a href="">AnotherUser</a></div>
-                    <div>Role</div>
+                    <div class="username"><a href="">OtroUsuario</a></div>
+                    <div>Rol</div>
                     <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="">
-                    <div>Posts: <u>455</u></div>
-                    <div>Points: <u>4586</u></div>
+                    <div>Publicaciones: <u>455</u></div>
+                    <div>Puntos: <u>4586</u></div>
                 </div>
                 <div class="content">
-                    Just a comment of the above random topic.
-                    <br>To see how it looks like.
+                    Solo un comentario sobre el tema aleatorio anterior.
+                    <br>Para ver cómo se ve.
                     <br><br>
-                    Nothing more and nothing less.
+                    Nada más y nada menos.
                     <br>
                     <br>
                     <div class="comment">
-                        <button onclick="showReply()">Reply</button>
+                        <button onclick="showReply()">Responder</button>
                     </div>
                 </div>
             </div>
         </div>
         <!--Reply Area-->
         <div class="comment-area hide" id="reply-area">
-            <textarea name="reply" id="" placeholder="reply here ... "></textarea>
-            <input type="submit" value="submit">
+            <textarea name="reply" id="" placeholder="Escribe tu respuesta aquí..."></textarea>
+            <input type="submit" value="Enviar">
         </div>
 
         
